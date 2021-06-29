@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/* HTML5 Elemente
+============================================= */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+display: block;
+}
+
+html {
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+
+
+
+
+/* Responsive Images
+============================================= */
+
+img {
+max-width: 100%;
+/* Part 1: Set a maxium relative to the parent */
+width: auto\9;
+/* IE7-8 need help adjusting responsive images */
+height: auto;
+/* Part 2: Scale the height according to the width, otherwise you get stretching */
+vertical-align: middle;
+border: 0;
+-ms-interpolation-mode: bicubic;
+}
+
+
+
+/* Basis
+============================================= */
+
+body, article, headline {
+margin: 0;
+font: 14px/22px "NotoSans-Regular", Geneva, sans-serif;
+color: #777;
+background: #000;
+}
+
+/*'MyWebFont',*/
+
+
+@font-face{ 
+	font-family: 'NotoSans-Bold';
+	src: url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.eot');
+	src: url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.eot?iefix') format('eot'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff') format('woff'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff.ttf') format('truetype'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff.svg#webfont') format('svg');
+}
+
+
+
+@font-face{ 
+	font-family: 'NotoSans-Regular';
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot');
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff') format('woff'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.ttf') format('truetype'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.svg#webfont') format('svg');
+}
+
+
+
+
+
+/* Links */
+
+a {
+color: #00c498;
+text-decoration: none;
+-webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+}
+
+
+a:hover,
+a:focus {
+color: #333;
+text-decoration: none;
+}
+
+
+a:hover,
+a:active {
+outline: 0;
+}
+
+
+
+
+
+
+/* Typografie
+============================================= */
+
+p { margin: 0 0 10px 0; }
+
+/* hervorheben */
+.lead {
+font-size: 21px;
+line-height: 30px;
+margin-bottom: 20px;
+}
+
+small { font-size: 85%; }
+strong { font-weight: bold; }
+/* das <em>-Tag betont ein Wort oder einen Ausdruck */
+em { font-style: italic; }
+
+/* Zitate */
+cite { font-style: normal; }
+
+/* abgeschwächt */
+.muted { color: #999999; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+h1, h2,
+h3, h4,
+h5, h6 {
+margin: 10px 0;
+font-weight: bold;
+line-height: 20px;
+color: #333333;
+text-rendering: optimizelegibility;
+}
+
+h1{ text-align:center;
+}
+
+h1,
+h2,
+h3 { 
+line-height: 40px;
+color: #900; }
+
+h1 { font-size: 39px; }
+h2 { font-size: 32px; }
+h3 { font-size: 25px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 11px; }
+
+
+/* hoch- und tiefstellen */
+sub,
+sup {
+position: relative;
+font-size: 75%;
+line-height: 0;
+vertical-align: baseline;
+}
+
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+
+
+/* Clearfix und Abstandsausgleich für die Zeilen */
+
+.row { margin-left: -20px; *zoom: 1; }
+
+.row:before,
+.row:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+.row:after { clear: both; }
+
+ /*Info zum folgenden Selektor
+http://blog.teamtreehouse.com/css3-substring-matching-attribute-selectors 
+*/
+
+[class*="album"] {
+float: left;
+min-height: 1px;
+margin-left: 10px;
+color:#000;
+alignment:center;
+background:#ffffff; 
+margin-bottom:10px;
+
+}
+
+.container { width: 90%; }
+
+.album1 {width: 15%;}
+.album2 {width: 31.5%;}
+.album3 {width: 48.1%;}
+.album4 {width: 15%;}
+
+
+
+/* Clearfix + Zentrieren für den Container
+=============================================== */
+
+.container {
+margin-right: auto;
+margin-left: auto;
+*zoom: 1;
+}
+
+.container:before,
+.container:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+.container:after { clear: both; }
+
+
+
+
+
+/* IMAGE BACKGROUND 
+========================*/
+
+html, body{width:100%;
+height:100%;
+background: #000;
+}
+
+
+
+#BoxMain {
+	width:100%;
+	background: #000;
+	margin:0 auto;
+	background-size: contain;
+
+}
+
+.main-image{margin-bottom:20px;
+background-color:#000;}
+
+
+
+
+
+/* footer 
+==============*/
+
+
+footer {
+	width: 100%;
+	height: 100px;
+	background: #CCC;
+	clear:both;
+	
+}
+
+
+
+/* ==============================
+									*/

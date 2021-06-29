@@ -1,0 +1,405 @@
+/*
+
+Basis Template
+Kurs: Allmusic 2013
+
+======================================================================== */
+
+
+/* HTML5 Elemente */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+display: block;
+}
+
+html {
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+
+/* Responsive Images */
+
+img {
+max-width: 100%;
+/* Part 1: Set a maxium relative to the parent */
+width: auto\9;
+/* IE7-8 need help adjusting responsive images */
+height: auto;
+/* Part 2: Scale the height according to the width, otherwise you get stretching */
+vertical-align: middle;
+border: 0;
+-ms-interpolation-mode: bicubic;
+}
+
+
+/* Basis
+============================================= */
+
+/*body {
+margin: 0;
+font:normal 14px/22px 'Open Sans', Arial, sans-serif;
+color: #777;
+background-color: #ffffff;
+}*/
+
+body, article, headline {
+margin: 0;
+font: 14px/22px "NotoSans-Regular", Geneva, sans-serif;
+color: #333;
+background: #fff;
+}
+
+/*'MyWebFont',*/
+
+
+@font-face{ 
+	font-family: 'NotoSans-Bold';
+	src: url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.eot');
+	src: url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.eot?iefix') format('eot'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff') format('woff'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff.ttf') format('truetype'),
+	     url('webfonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff.svg#webfont') format('svg');
+}
+
+
+
+@font-face{ 
+	font-family: 'NotoSans-Regular';
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot');
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff') format('woff'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.ttf') format('truetype'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.svg#webfont') format('svg');
+}
+
+
+.container_b h2{	
+	font-family: "NotoSans-Regular", Geneva, sans-serif;
+	color: #bacc05;
+	font-size:3em;
+	text-align: left;
+	/*text-transform: uppercase;*/
+	margin-bottom: 1%;
+}
+.container_b p{
+	font-family: "NotoSans-Regular", Geneva, sans-serif;
+	color: #000;
+	font-size: 1.2em;
+	/*text-transform: uppercase;*/
+	text-align: justify;
+	margin-bottom: 4%;
+	line-height: 180%;
+	
+}
+.container_b h3{
+	font-family: "NotoSans-Regular", Geneva, sans-serif;	
+	color: #1b686d;
+	font-size:3em;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 2%;
+}
+
+
+
+
+/* Links */
+
+.container_b a {
+color: #bacc05;
+text-decoration: none;
+text-transform: uppercase;
+-webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+}
+
+.container_b a:hover,
+.container_b a:focus {
+color: #333;
+text-decoration: none;
+}
+
+.container_b a:hover,
+.container_b a:active {
+outline: 0;
+}
+
+
+/* Raster
+============================================= */
+
+/* Clearfix und Abstandsausgleich für die Zeilen */
+
+.row { margin-left: -20px; *zoom: 1; }
+
+.row:before,
+.row:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+.row:after { clear: both; }
+
+/* Info zum folgenden Selektor
+http://blog.teamtreehouse.com/css3-substring-matching-attribute-selectors */
+
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 20px;
+
+/* nur um die Spalten sichbar zu machen  */
+/*background:#999; color:#FFF;*/ 
+margin-bottom:30px; margin-top: 50px;
+}
+
+
+.container_b { width: 940px; }
+
+.span12 { 
+	width: 940px; }
+.span11 { width: 860px; }
+.span10 { width: 780px; }
+.span9 	{ width: 700px; }
+.span8  { width: 620px; }
+.span7  { width: 540px; }
+/*.span6  { width: 460px; }
+.span5  { width: 380px; }*/
+.span5  { width: 460px; }
+.span4  { width: 300px; }
+.span3  { width: 220px; }
+.span2  { width: 140px; }
+.span1  { width: 60px; }
+
+.offset12 { margin-left: 980px; }
+.offset11 { margin-left: 900px; }
+.offset10 { margin-left: 820px; }
+.offset9  { margin-left: 740px; }
+.offset8  { margin-left: 660px; }
+.offset7  { margin-left: 580px; }
+.offset6  { margin-left: 500px; }
+.offset5  { margin-left: 420px; }
+.offset4  { margin-left: 340px; }
+.offset3  { margin-left: 260px; }
+.offset2  { margin-left: 180px; }
+.offset1  { margin-left: 100px; }
+
+
+
+/* Clearfix + Zentrieren für den Container */
+
+.container_b {
+margin-right: auto;
+margin-left: auto;
+*zoom: 1;
+}
+
+.container_b:before,
+.container_b:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+.container_b:after { clear: both; }
+
+
+/*
+==============================================
+==============================================
+   Responsive / CSS3 Media Queries
+==============================================
+============================================== */
+
+
+/*
+   Elemente ein- und ausblenden
+==============================================*/
+
+@-ms-viewport { width: device-width; }
+
+.hidden { display: none; visibility: hidden; }
+.visible-phone { display: none !important; }
+.visible-tablet { display: none !important; }
+.hidden-desktop { display: none !important; }
+.visible-desktop { display: inherit !important; }
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.hidden-desktop { display: inherit !important; }
+.visible-desktop { display: none !important ; }
+.visible-tablet { display: inherit !important; }
+.hidden-tablet { display: none !important; }
+}
+
+@media (max-width: 767px) {
+.hidden-desktop { display: inherit !important; }
+.visible-desktop { display: none !important; }
+.visible-phone { display: inherit !important; }
+.hidden-phone { display: none !important; }
+}
+
+.visible-print { display: none !important; }
+
+@media print {
+.visible-print { display: inherit !important; }
+.hidden-print { display: none !important; }
+}
+
+/* Mobile 
+==============================================*/
+
+@media (max-width: 767px) {
+body {
+padding-left: 20px;
+padding-right: 20px;
+font-size: 0.7em;
+line-height: 1.6em;
+}
+
+.container_b { width: auto; }
+
+.row { margin-left: 0; }
+
+[class*="span"] {
+float: none;
+display: block;
+width: 100%;
+margin-left: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.span12 {
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+}
+
+
+/* Tablet 
+==============================================*/
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.row {
+margin-left: -20px;
+*zoom: 1;
+}
+
+.row:before,
+.row:after {
+display: table;
+content: "";
+line-height: 0;
+}
+.row:after { clear: both; }
+
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 20px;
+}
+
+.container_b { width: 724px; }
+
+.span12 { 
+	width: 724px;}
+.span11 { width: 662px; }
+.span10 { width: 600px; }
+.span9 { width: 538px; }
+.span8 { width: 476px; }
+.span7 { width: 414px; }
+/*.span6 { width: 352px; }
+.span5 { width: 290px; }*/
+.span5 { width: 352px; }
+.span4 { width: 228px; }
+.span3 { width: 166px; }
+.span2 { width: 104px; }
+.span1 { width: 42px; }
+
+.offset12 { margin-left: 764px; }
+.offset11 { margin-left: 702px; }
+.offset10 { margin-left: 640px; }
+.offset9 { margin-left: 578px; }
+.offset8 { margin-left: 516px; }
+.offset7 { margin-left: 454px; }
+.offset6 { margin-left: 392px; }
+.offset5 { margin-left: 330px; }
+.offset4 { margin-left: 268px; }
+.offset3 { margin-left: 206px; }
+.offset2 { margin-left: 144px; }
+.offset1 { margin-left: 82px; }
+
+
+}
+
+
+/* Large Desktop 
+==============================================*/
+
+@media (min-width: 1400px) {
+.row {
+ margin-left: -30px;
+*zoom: 1;
+}
+.row:before,
+.row:after {
+display: table;
+content: "";
+line-height: 0;
+}
+.row:after {
+clear: both;
+}
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 50px;
+}
+
+
+.container_b { width: 1370px; }
+
+.span12 { 
+	width: 1170px; }
+.span11 { width: 1070px; }
+.span10 { width: 970px; }
+.span9 { width: 870px; }
+.span8 { width: 770px; }
+.span7 { width: 670px; }
+/*.span6 { width: 570px; }
+.span5 { width: 470px; }*/
+.span5 { width: 570px;}
+.span4 { width: 370px; }
+.span3 { width: 270px; }
+.span2 { width: 170px; }
+.span1 { width: 70px; }
+
+.offset12 { margin-left: 1230px; }
+.offset11 { margin-left: 1130px; }
+.offset10 { margin-left: 1030px; }
+.offset9 { margin-left: 930px; }
+.offset8 { margin-left: 830px; }
+.offset7 { margin-left: 730px; }
+.offset6 { margin-left: 630px; }
+.offset5 { margin-left: 530px; }
+.offset4 { margin-left: 430px; }
+.offset3 { margin-left: 330px; }
+.offset2 { margin-left: 230px; }
+.offset1 { margin-left: 130px; }
+
+}
+
+
+

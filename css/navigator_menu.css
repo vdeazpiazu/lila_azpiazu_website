@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* ==================
+	NAVIGATOR MENU 	*/
+	
+
+nav ul {
+	list-style:none;
+	margin-left: 1%;
+	min-height: 1px;
+	margin-top:none;
+	background: #000;
+}
+
+nav li {
+	font: 13px/20px "NotoSans-Regular", Geneva, sans-serif;
+	width:5%;
+	height:auto;
+	text-align:center;
+	margin-top: none;
+	margin-left: 1%;
+	min-height: 1px;
+	display:inline-block;
+	padding:0;
+}
+
+
+
+@font-face{ 
+	font-family: 'NotoSans-Regular';
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot');
+	src: url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff') format('woff'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.ttf') format('truetype'),
+	     url('webfonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff.svg#webfont') format('svg');
+}
+
+
+
+
+
+nav li a {
+text-decoration: none;
+color: #FFF;
+/*background: #bbb;*/
+
+display:block;
+
+-webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+	    border-radius: 4px;
+
+-webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+	}
+
+/*	:focus für Elemente, die den Fokus erhalten, z. B. durch "Durchsteppen" mit der Tabulator-Taste
+	:hover für Elemente, während der Anwender mit der Maus darüber fährt */
+nav li a:hover,
+nav li a:focus {
+background: #FFF;
+border:none;
+outline:none;
+color: #821134;
+}
+
+/* :active für gerade angeklickte Elemente */	
+nav li a:active {
+background: #FFF;
+}
+	
+/* die Klasse .active wird verwendet um einen aktiven Link zu gestalten */
+.active {
+background: #821134;
+color: #FFF;
+}								
+
